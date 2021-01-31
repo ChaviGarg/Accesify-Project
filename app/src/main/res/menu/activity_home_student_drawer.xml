@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/qrcode"
+            android:title="Generate Code" />
+        <item
+            android:id="@+id/STdrawer_Noticeboard_button"
+            android:icon="@drawable/outline_event_note_black_24dp"
+            android:title="Notice Board" />
+        <item
+            android:id="@+id/STdrawer_ViewProfile_button"
+            android:icon="@drawable/outline_account_circle_black_24dp"
+            android:title="View Profile" />
+        <item
+            android:id="@+id/STdrawer_Settings_button"
+            android:icon="@drawable/outline_settings_black_24dp"
+            android:title="Settings" />
+        <item
+            android:id="@+id/STdrawer_Logout_button"
+            android:icon="@drawable/outline_exit_to_app_black_24dp"
+            android:title="Logout" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+
+            <item
+                android:id="@+id/STdrawer_About_button"
+                android:icon="@drawable/outline_info_black_24dp"
+                android:title="About" />
+        </menu>
+    </item>
+
+</menu>

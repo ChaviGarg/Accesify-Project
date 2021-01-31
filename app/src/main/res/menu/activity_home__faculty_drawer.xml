@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/FTdrawer_AddStudent_button"
+            android:icon="@drawable/outline_person_add_black_24dp"
+            android:title="Add Student" />
+        <item
+            android:id="@+id/FTdrawer_Noticeboard_button_button"
+            android:icon="@drawable/outline_event_note_black_24dp"
+            android:title="Notice Board" />
+        <item
+            android:id="@+id/FTdrawer_Editinfo_button"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Edit info" />
+        <item
+            android:id="@+id/FTdrawer_addNotice_button"
+            android:icon="@drawable/outline_cloud_upload_black_24dp"
+            android:title="Add Notice" />
+        <item
+            android:id="@+id/FTdrawer_Logout_button"
+            android:icon="@drawable/outline_exit_to_app_black_24dp"
+            android:title="Logout" />
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/FTdrawer_Settings_button"
+                android:icon="@drawable/outline_settings_black_24dp"
+                android:title="Settings" />
+            <item
+                android:id="@+id/FTdrawer_About_button"
+                android:icon="@drawable/outline_info_black_24dp"
+                android:title="About" />
+        </menu>
+    </item>
+
+</menu>

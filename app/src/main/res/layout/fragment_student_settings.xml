@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView2"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    tools:context=".Student_settings_fragment">
+
+    <android.support.constraint.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/settings_fathername_ID"
+            android:layout_width="162dp"
+            android:layout_height="39dp"
+            android:layout_alignStart="@+id/settings_image_ID"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/product_sans"
+            android:hint="Your Father's Name"
+            android:paddingLeft="2.5dp"
+            android:textAlignment="viewStart"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/settings_group_name_ID" />
+
+        <EditText
+            android:id="@+id/settings_group_name_ID"
+            android:layout_width="162dp"
+            android:layout_height="39dp"
+            android:layout_alignStart="@+id/settings_image_ID"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/product_sans"
+            android:hint="Your Group"
+            android:paddingLeft="2.5dp"
+            android:textAlignment="viewStart"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/settings_phonenumber_ID3" />
+
+        <EditText
+            android:id="@+id/settings_phonenumber_ID3"
+            android:layout_width="162dp"
+            android:layout_height="43dp"
+            android:layout_alignStart="@+id/settings_image_ID"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/product_sans"
+            android:hint="Your Phone Number"
+            android:paddingLeft="2.5dp"
+            android:textAlignment="viewStart"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/settings_branch_ID" />
+
+        <Button
+            android:id="@+id/settings_changebranch_button_ID2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/settings_Course_ID"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/product_sans"
+            android:text="Change branch"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/settings_changeCourse_button_ID" />
+
+        <Button
+            android:id="@+id/settings_changephone_button_ID3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/settings_Course_ID"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="24dp"
+            android:fontFamily="@font/product_sans"
+            android:text="Change Phone"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/settings_changebranch_button_ID2" />
+
+        <Button
+            android:id="@+id/settings_changegroup_button_ID4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/settings_Course_ID"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:fontFamily="@font/product_sans"
+            android:text="Change Group"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/settings_changephone_button_ID3" />
+
+        <Button
+            android:id="@+id/settings_changefathername_button_ID5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/settings_Course_ID"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="28dp"
+            android:fontFamily="@font/product_sans"
+            android:text="Change name"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/settings_changegroup_button_ID4" />
+
+        <EditText
+            android:id="@+id/settings_branch_ID"
+            android:layout_width="162dp"
+            android:layout_height="43dp"
+            android:layout_alignStart="@+id/settings_image_ID"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/product_sans"
+            android:hint="Your Branch"
+            android:paddingLeft="2.5dp"
+            android:textAlignment="viewStart"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/settings_Course_ID" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/settings_image_ID"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/contact_avatar"
+            app:layout_constraintBottom_toTopOf="@+id/settings_phonenumber_ID3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.143" />
+
+        <Button
+            android:id="@+id/settings_changeCourse_button_ID"
+            android:layout_width="wrap_content"
+            android:layout_height="51dp"
+            android:layout_alignStart="@+id/settings_Course_ID"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="9dp"
+            android:fontFamily="@font/product_sans"
+            android:text=" Change Course"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toTopOf="@+id/settings_changebranch_button_ID2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/settings_changeDP_Btn_ID" />
+
+        <Button
+            android:id="@+id/settings_changeDP_Btn_ID"
+            android:layout_width="183dp"
+            android:layout_height="wrap_content"
+
+            android:layout_alignStart="@+id/settings_displayname_ID"
+            android:layout_alignBottom="@+id/settings_image_ID"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="84dp"
+            android:fontFamily="@font/product_sans"
+            android:text="Change Photo"
+            app:layout_constraintBottom_toTopOf="@+id/settings_Course_ID"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/settings_displayname_ID"
+            app:layout_constraintVertical_bias="0.229" />
+
+        <EditText
+            android:id="@+id/settings_Course_ID"
+            android:layout_width="162dp"
+            android:layout_height="43dp"
+            android:layout_alignStart="@+id/settings_image_ID"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/product_sans"
+            android:hint="Your Course"
+            android:paddingLeft="2.5dp"
+            android:textAlignment="viewStart"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/settings_changeDP_Btn_ID" />
+
+        <TextView
+            android:id="@+id/settings_displayname_ID"
+            android:layout_width="173dp"
+            android:layout_height="48dp"
+            android:layout_alignTop="@+id/settings_image_ID"
+            android:layout_alignParentEnd="true"
+
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/product_sans"
+            android:paddingLeft="0dp"
+            android:text="Display name"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toTopOf="@+id/settings_changeDP_Btn_ID"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/settings_image_ID" />
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

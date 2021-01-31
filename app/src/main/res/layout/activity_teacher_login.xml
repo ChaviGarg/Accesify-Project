@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Teacher_login">
+
+    <TextView
+        android:id="@+id/log_textfield2"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="64dp"
+        android:fontFamily="@font/product_sans"
+        android:text="Please enter your email and password "
+        android:textAlignment="viewStart"
+        android:textSize="19sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayout"
+        android:layout_width="344dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/textInputLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.432"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/log_textfield2">
+
+        <EditText
+            android:id="@+id/teacher_email_ID"
+            android:layout_width="333dp"
+            android:layout_height="51dp"
+            android:fontFamily="@font/product_sans"
+            android:hint="Email"
+            android:inputType="textEmailAddress" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayout3"
+        android:layout_width="344dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="79dp"
+        app:layout_constraintBottom_toTopOf="@+id/teacher_submit_button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.371"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
+
+        <EditText
+            android:id="@+id/teacher_password_ID"
+            android:layout_width="333dp"
+            android:layout_height="41dp"
+            android:fontFamily="@font/product_sans"
+            android:hint="Password"
+            android:inputType="textPassword" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/teacher_submit_button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="315dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="264dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:onClick="submit"
+        android:text="Submit"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout3" />
+</android.support.constraint.ConstraintLayout>

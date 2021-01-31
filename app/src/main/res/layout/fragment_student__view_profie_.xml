@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layout">
+
+
+        <ImageView
+            android:id="@+id/header_cover_image"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/side_nav_bar"
+            android:scaleType="centerCrop"
+
+            android:src="@drawable/nav_menu_header_bg"
+            app:srcCompat="@drawable/nav_menu_header_bg" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+
+            android:clickable="true"
+            app:civ_border_width="3dp"
+            app:civ_border_color="#FFFFFFFF"
+
+            android:id="@+id/profile"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_below="@+id/header_cover_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-130dp"
+            android:elevation="5dp"
+            android:padding="20dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/man" />
+
+        <RelativeLayout
+            android:id="@+id/profile_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/header_cover_image"
+            android:background="#ebca0707"
+            android:elevation="4dp"
+            android:paddingBottom="24dp">
+
+
+            <ImageView
+                android:id="@+id/edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:clickable="true"
+
+                android:src="@android:drawable/ic_menu_edit" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="70dp"
+                android:text=""
+                android:textColor="#fff"
+                android:fontFamily="@font/product_sans"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/emailid"
+                android:fontFamily="@font/product_sans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rollnum"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text=""
+                android:textColor="#fff"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/rollnum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/product_sans"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/profile_layout"
+            android:layout_margin="5dp"
+            android:layout_marginTop="5dp"
+            android:background="#fff"
+            android:elevation="4dp"
+            android:orientation="vertical"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+
+            >
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="79dp"
+                android:clickable="true"
+                android:fontFamily="@font/product_sans"
+                android:text="BRANCH: "
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:clickable="true"
+                android:text="GROUP: "
+                android:fontFamily="@font/product_sans"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="8dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:clickable="true"
+                android:text="FATHER NAME:"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/product_sans"
+                app:layout_constraintTop_toBottomOf="@+id/textView11"
+                android:layout_marginLeft="8dp"
+                app:layout_constraintLeft_toLeftOf="parent" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="8dp"
+                android:clickable="true"
+                android:fontFamily="@font/product_sans"
+
+                android:text="COURSE"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mobile" />
+
+            <TextView
+                android:id="@+id/father_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:clickable="true"
+                android:fontFamily="@font/product_sans"
+                android:text=""
+                android:textSize="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@+id/textView15" />
+
+            <TextView
+                android:id="@+id/course"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="8dp"
+                android:clickable="true"
+                android:fontFamily="@font/product_sans"
+                android:textSize="20dp"
+                app:layout_constraintLeft_toRightOf="@+id/textView11"
+                app:layout_constraintTop_toBottomOf="@+id/mobileNumber" />
+
+            <TextView
+                android:id="@+id/group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="8dp"
+                android:clickable="true"
+                android:fontFamily="@font/product_sans"
+                android:textSize="20dp"
+                app:layout_constraintLeft_toRightOf="@+id/textView7"
+                app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+            <TextView
+                android:id="@+id/mobileNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="8dp"
+                android:clickable="true"
+                android:fontFamily="@font/product_sans"
+                android:textSize="20dp"
+                app:layout_constraintLeft_toRightOf="@+id/mobile"
+                app:layout_constraintTop_toBottomOf="@+id/group" />
+
+
+            <TextView
+                android:id="@+id/mobile"
+                android:layout_width="wrap_content"
+                android:fontFamily="@font/product_sans"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:text="MOBILE: "
+                android:textStyle="bold"
+                android:layout_margin="5dp"
+                android:layout_marginLeft="8dp"
+                android:textSize="20dp"
+                android:layout_marginTop="5dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView7"
+                app:layout_constraintLeft_toLeftOf="parent" />
+
+
+            <TextView
+                android:id="@+id/branch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="68dp"
+                android:clickable="true"
+                android:fontFamily="@font/product_sans"
+                android:text=""
+                android:textSize="20dp"
+                app:layout_constraintStart_toEndOf="@+id/textView5"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+    </RelativeLayout>
+</ScrollView>
